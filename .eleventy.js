@@ -1,6 +1,16 @@
 const isDev = process.env.ELEVENTY_ENV !== "production";
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "rss",
+    outputPath: "/rss.xml",
+    collection: {
+      name: "posts",
+      limit: 10,
+    },
+  });
+
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("posts/**/*.{png,jpg,jpeg,gif,svg,webp}");
 

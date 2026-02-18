@@ -28,7 +28,12 @@ header a {
   text-decoration: none;
 }
 
-header a:last-child {
+.header-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-links a {
   font-weight: normal;
 }
 
