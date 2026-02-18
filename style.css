@@ -45,6 +45,7 @@ header a {
 
 .header-links a {
   font-weight: normal;
+  text-decoration: underline;
 }
 
 h1,
@@ -121,4 +122,8 @@ blockquote {
 }
 .img-md {
   max-width: 600px;
+}
+
+a:hover {
+  text-decoration: none;
 }
