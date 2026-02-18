@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  text-align: left;
+  margin: auto;
+  max-width: 800px;
+}
+
+main {
+  border: solid 0px red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: lowercase;
+}
