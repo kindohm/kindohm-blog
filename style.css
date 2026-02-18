@@ -1,12 +1,35 @@
 body {
   font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   text-align: left;
-  margin: auto;
+  margin: 0 auto;
   max-width: 800px;
+  padding: 2rem 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a:last-child {
+  font-weight: normal;
 }
 
 h1,
@@ -16,4 +39,52 @@ h4,
 h5,
 h6 {
   text-transform: lowercase;
+  line-height: 1.2;
+}
+
+time {
+  font-size: 0.9rem;
+}
+
+article time {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+  align-items: baseline;
+}
+
+.post-list li {
+  display: contents;
+}
+
+.post-list a {
+  justify-self: start;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+footer {
+  font-size: 0.75rem;
+  margin-top: 4rem;
+}
+
+img {
+  max-width: 100%;
 }
