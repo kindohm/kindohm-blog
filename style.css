@@ -115,3 +115,10 @@ blockquote {
 blockquote {
   font-style: italic;
 }
+
+.img-sm {
+  max-width: 400px;
+}
+.img-md {
+  max-width: 600px;
+}
