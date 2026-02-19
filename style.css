@@ -1,6 +1,5 @@
 body {
-  font-family: "Trebuchet MS", "Helvetica Neue", sans-serif;
-
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
@@ -56,6 +55,7 @@ h5,
 h6 {
   text-transform: lowercase;
   line-height: 1.2;
+  font-weight: normal;
 }
 
 time {
