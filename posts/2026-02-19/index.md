@@ -1,6 +1,6 @@
 ---
 title: "new music: variadic daemon"
-draft: true
+draft: false
 ---
 
 Pleased to announce new music: _[variadic daemon](https://kindohm.bandcamp.com/album/variadic-daemon)_, available
