@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.on("eleventy.after", async ({ dir, results }) => {
     for (const result of results) {
-      if (!/posts\/\d{4}-\d{2}-\d{2}\/index\.md$/.test(result.inputPath)) continue;
+      if (!/posts\/\d{4}-\d{2}-\d{2}[^/]*\/index\.md$/.test(result.inputPath)) continue;
       const inputDir = path.dirname(result.inputPath);
       const outputDir = path.join(dir.output, result.url);
       for (const file of fs.readdirSync(inputDir)) {

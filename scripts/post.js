@@ -7,11 +7,14 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+const slugify = (str) =>
+  str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 rl.question("Title: ", (title) => {
   rl.close();
 
   const date = new Date().toISOString().split("T")[0];
-  const dir = path.join("posts", date);
+  const dir = path.join("posts", `${date}-${slugify(title)}`);
 
   fs.mkdirSync(dir, { recursive: true });
 
