@@ -2,15 +2,13 @@
 layout: layout.njk
 title: kindohm blog/social
 ---
-<p>Occasional information and updates. 
+<p>Occasional information and updates.
 Otherwise I just post things so I don't forget them.</p>
 
-<h1>Posts</h1>
-<ul class="post-list">
-  {% for post in collections.posts %}
-    <li>
-      <time datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in collections.posts %}
+  <article class="post-summary">
+    <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+    <time datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time>
+    {{ post.content | absoluteImageUrls(post.url) | safe }}
+  </article>
+{% endfor %}

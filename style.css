@@ -96,9 +96,17 @@ p {
   margin: 0 0 1.5rem;
 }
 
+.post-summary {
+  margin-top: 7rem;
+}
+
+.post-summary:first-of-type {
+  margin-top: 3.5rem;
+}
+
 footer {
   font-size: 0.75rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 img {

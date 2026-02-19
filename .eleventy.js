@@ -30,6 +30,13 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.addFilter("absoluteImageUrls", (content, baseUrl) => {
+    return content.replace(
+      /<img([^>]+)src="(?!https?:\/\/|\/)([^"]+)"/gi,
+      (_match, before, src) => `<img${before}src="${baseUrl}${src}"`
+    );
+  });
+
   eleventyConfig.addFilter("dateDisplay", (date) => {
     return new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
