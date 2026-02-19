@@ -1,6 +1,6 @@
 ---
 title: Algorithmic Art Assembly 2026
-draft: true
+draft: false
 ---
 
 <p>
