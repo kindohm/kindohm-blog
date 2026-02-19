@@ -6,15 +6,15 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f5f0e8;
-  color: #1a1a1a;
+  background-color: #edeff1;
+  color: #1c1c1e;
 }
 
 a,
 a:active,
 a:link,
 a:visited {
-  color: #1a1a1a;
+  color: #1c1c1e;
 }
 
 .container {
@@ -107,7 +107,7 @@ img {
 
 aside,
 blockquote {
-  border-left: 3px solid #1a1a1a;
+  border-left: 3px solid #1c1c1e;
   margin: 2rem 0;
   padding: 0.5rem 1.25rem;
   font-size: 0.95rem;
