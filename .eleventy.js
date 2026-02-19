@@ -1,5 +1,9 @@
+const fs = require("fs");
+const path = require("path");
 const isDev = process.env.ELEVENTY_ENV !== "production";
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+
+const IMAGE_EXTS = /\.(png|jpg|jpeg|gif|svg|webp)$/i;
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
@@ -12,7 +16,19 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("style.css");
-  eleventyConfig.addPassthroughCopy("posts/**/*.{png,jpg,jpeg,gif,svg,webp}");
+
+  eleventyConfig.on("eleventy.after", async ({ dir, results }) => {
+    for (const result of results) {
+      if (!/posts\/\d{4}-\d{2}-\d{2}\/index\.md$/.test(result.inputPath)) continue;
+      const inputDir = path.dirname(result.inputPath);
+      const outputDir = path.join(dir.output, result.url);
+      for (const file of fs.readdirSync(inputDir)) {
+        if (!IMAGE_EXTS.test(file)) continue;
+        fs.mkdirSync(outputDir, { recursive: true });
+        fs.copyFileSync(path.join(inputDir, file), path.join(outputDir, file));
+      }
+    }
+  });
 
   eleventyConfig.addFilter("dateDisplay", (date) => {
     return new Date(date).toLocaleDateString("en-US", {
