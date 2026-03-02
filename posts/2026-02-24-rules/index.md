@@ -5,7 +5,7 @@ draft: true
 
 My [creative colleague](https://keithsenkowski.com/)
 recently shared a list of ten creative rules that he
-remembers and incorporates into his creative practice.
+incorporates into his creative practice.
 
 He made them into a zine. I'm merely using a bulleted list,
 but here they are.
@@ -23,3 +23,9 @@ but here they are.
 6. juxtapose
 
 7. subvert expectations
+
+8. kill the ego
+
+9. an audience of zero to one is ok
+
+10. do the work
