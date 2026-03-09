@@ -35,8 +35,6 @@ const getCombo = () => {
 
 const { foreground, background } = getCombo();
 
-console.log("colors:", { foreground, background });
-
 module.exports = {
   risks: [
     "dry mouth",
