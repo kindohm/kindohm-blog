@@ -1,6 +1,6 @@
 ---
 title: AAA^3 packing list
-draft: true
+draft: false
 ---
 
 - ethernet dongle
