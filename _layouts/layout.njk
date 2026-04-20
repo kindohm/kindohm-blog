@@ -13,12 +13,13 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <a href="/">kindohm blog/social</a>
-        <div class="header-links">
+      <header class="site-header">
+        <a class="site-title" href="/">kindohm blog/social</a>
+        <nav class="header-links" aria-label="Primary">
           <a href="/rss.xml">rss</a>
-          <a href="https://kindohm.com">main site / newsletter / contact</a>
-        </div>
+          <a href="https://kindohm.com">main site</a>
+        </nav>
+        <span class="site-mark" aria-hidden="true"></span>
       </header>
       <main>
         {{ content | safe }}
