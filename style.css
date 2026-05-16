@@ -247,6 +247,49 @@ article > time {
   text-decoration-thickness: 0.12em;
 }
 
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bar);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.pagination ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination li {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+}
+
+.pagination a[aria-current="page"] {
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.pagination span {
+  color: var(--muted);
+}
+
 ul,
 ol {
   margin: 0 0 1.55rem 1.35rem;
