@@ -1,5 +1,5 @@
 ---
-title: "this is a nice video"
+title: "clip of AAA performance w/ Sebastian Camens"
 date: 2026-05-17
 sourceUploadId: "0e73feea-d3db-4e8c-9865-98c5ca16cdfe"
 sourceVideoFileName: "PXL_20260327_062349489.mp4"
