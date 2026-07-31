@@ -432,3 +432,9 @@ footer p {
     margin: 1.5rem 0;
   }
 }
+
+.yt,
+.yt-div {
+  display: flex;
+  justify-content: center;
+}
