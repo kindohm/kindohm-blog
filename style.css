@@ -437,4 +437,5 @@ footer p {
 .yt-div {
   display: flex;
   justify-content: center;
+  margin-bottom: 2.25rem;
 }
