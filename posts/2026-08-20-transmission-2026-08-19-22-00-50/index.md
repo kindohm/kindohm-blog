@@ -1,6 +1,6 @@
 ---
-title: transmission 2026.08.19.22.00.50
-draft: true
+title: transmission.2026.08.19.22.00.50
+draft: false
 ---
 
 <div class="yt">
